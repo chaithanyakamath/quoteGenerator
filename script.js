@@ -3,8 +3,10 @@ const author = document.getElementById("author");
 
 const api_url = "https://api.quotable.io/random";
 
+
+
 async function getQuote(url) {
-     // Re-trigger fade-in animation
+
     quote.classList.remove("fade-in");
     void quote.offsetWidth; // Forces reflow
     quote.classList.add("fade-in");
@@ -23,5 +25,4 @@ async function getQuote(url) {
         author.innerHTML = "";
         console.error("Error fetching quote:", error);
     }   }
-
-        getQuote(api_url);
+getQuote(api_url);
