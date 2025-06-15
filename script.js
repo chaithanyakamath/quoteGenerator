@@ -1,7 +1,7 @@
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 
-const api_url = "/api/quote";
+const api_url = "https://api.quotable.io/random";
 
 async function getQuote(url) {
      // Re-trigger fade-in animation
