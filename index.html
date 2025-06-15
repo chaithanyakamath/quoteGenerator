@@ -19,6 +19,14 @@
     </div>
 
     <script>
+        
+        const quoteEl = document.getElementById("quote");
+        // Remove and re-add the fade-in class to restart animation
+        quoteEl.classList.remove("fade-in");
+        void quoteEl.offsetWidth; // trick to re-trigger CSS animation
+        quoteEl.classList.add("fade-in");
+
+
         const quote = document.getElementById('quote');
         const author = document.getElementById('author');
 
